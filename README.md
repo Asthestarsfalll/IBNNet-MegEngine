@@ -40,6 +40,9 @@ Way 1:
 ```python
 from megengine import hub
 
+modelhub = hub.import_module(
+    repo_info='asthestarsfalll/IBNNet-MegEngine:main', git_host='github.com')
+
 # load pretrained model
 pretrained_model = modelhub.resnet50_ibn_a(pretrained=True)
 ```
